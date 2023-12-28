@@ -12,25 +12,30 @@ constructor(){
   this.todos=[
     {
     sno:1,
-    title:"This is description",
-    desc:"Description" ,
+    title:"Item 1",
+    desc:"Description for item 1" ,
     active:true
   },
   {
     sno:2,
-    title:"This is title2",
-    desc:"Description" ,
+    title:"Item 2",
+    desc:"Description for item 2" ,
     active:true
   },
   {
     sno:3,
-    title:"This is description",
-    desc:"Description" ,
-    active:true
+    title:"Item 3",
+    desc:"Description for item 3" ,
+    active:false
   },
   ]
 }
 ngOnInit(): void {
 
+}
+deleteTodo(todo:Todo){
+
+ const index=this.todos.indexOf(todo);
+ this.todos.splice(index,1);
 }
 }
