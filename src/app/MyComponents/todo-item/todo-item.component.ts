@@ -8,7 +8,9 @@ import { Todo } from 'src/app/Todo';
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
+  @Input() i: number;
   @Output() todoDelete: EventEmitter<Todo>=new EventEmitter<Todo>();
+  @Output() todoCheck: EventEmitter<Todo>=new EventEmitter<Todo>();
   constructor(){}
 ngOnInit(): void {}
 
@@ -16,4 +18,9 @@ ngOnInit(): void {}
 this.todoDelete.emit(todo);
 console.log("onClick Triggered");
   }
+  onCheckBoxClick(todo:Todo){
+    this.todoCheck.emit(todo);
+todo.active=false;
+  }
 }
+
