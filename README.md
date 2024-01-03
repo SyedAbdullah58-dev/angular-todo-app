@@ -1,4 +1,6 @@
 # AngularTodoList
+![todo_app_snapshot](https://github.com/SyedAbdullah58-dev/angular-todo-app/assets/61689698/5c6c9c78-a57e-4967-a7bb-3d70b3e37f1f)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
